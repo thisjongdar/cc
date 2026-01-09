@@ -11,14 +11,14 @@
 
   "forwardPorts": [3000],
 
-  "postCreateCommand": "npm install",
-
-  "postStartCommand": "nohup npm run dev > server.log 2>&1 &",
-
   "portsAttributes": {
     "3000": {
       "label": "Command API",
+      "visibility": "public",
       "onAutoForward": "notify"
     }
-  }
+  },
+
+  "postCreateCommand": "npm install",
+  "postStartCommand": "nohup npm run dev > server.log 2>&1 &"
 }
