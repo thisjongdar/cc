@@ -1,6 +1,13 @@
 {
   "name": "Codespace Command Executor",
-  "image": "mcr.microsoft.com/devcontainers/node:20",
+
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
+  },
 
   "forwardPorts": [3000],
 
