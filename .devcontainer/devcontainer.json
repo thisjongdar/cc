@@ -20,5 +20,5 @@
   },
 
   "postCreateCommand": "npm install",
-  "postStartCommand": "nohup npm run dev > server.log 2>&1 &"
+  "postStartCommand": "npm run dev"
 }
